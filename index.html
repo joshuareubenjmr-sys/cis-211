@@ -3,78 +3,245 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CIS 211 Internet & Web Technology</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Radio+Canada:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+    <title>Aetherfield | Sustainability insights, built for business</title>
+    <meta name="description" content="Aetherfield helps businesses track impact, reduce emissions, and accelerate progress with clarity and confidence." />
+
+    <!-- Fonts: Inter Tight (sans), Newsreader (serif), IBM Plex Mono (buttons + labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400&display=swap" rel="stylesheet" />
+
     <link href="./css/styles.css" rel="stylesheet" />
-    
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <h3 class="textLogo"> Aetherfield</h3>
-          <!-- <img src="./images/" alt="Logo" class="brandLogo"> -->
-        </div>
-        <ul>
+
+    <!-- ================= HEADER / NAV ================= -->
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="./index.html" class="textLogo">Aetherfield</a>
+        <!-- <img src="./images/" alt="Logo" class="brandLogo"> -->
+
+        <!-- Checkbox + label = CSS-only mobile menu toggle -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-btn" aria-label="Open menu">+</label>
+
+        <ul class="nav-links">
           <li><a href="./product.html">Product</a></li>
           <li><a href="./journal.html">Journal</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./careers.html">Careers</a></li>
-          <li><a href="./getstarted.html">Get Started</a></li>
+          <li><a href="./getstarted.html">Get started +</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="container">
+    <main>
+
+      <!-- ================= 1. HERO ================= -->
       <section class="hero">
-        <div class="heroText">
-          <h1>Sustainability Insights, <br>built for business</h1>
-      <p>Track impact, reduce emissions, and accelerate progress—with clarity and confidence.</p>
-      <button class="btn">Request a demo</button>
-      <button class="btn">Explore the platform</button>
+        <div class="container hero-inner">
+          <h1 class="split-heading hero-title">
+            <span class="serif">Sustainability insights,</span>
+            <span>built for business</span>
+          </h1>
+          <p class="hero-sub">Track impact, reduce emissions, and accelerate progress—with clarity and confidence.</p>
+
+          <div class="btn-row">
+            <a href="./getstarted.html" class="btn">+ Request a demo</a>
+            <a href="./product.html" class="btn">+ Explore the platform</a>
+          </div>
+
+          <img src="./images/HeroImage@2x.png" alt="Aetherfield dashboard: Good morning, Acme Inc. Your daily impact metrics are ready to review." class="hero-img" />
         </div>
-        
-      <div class="heroImg">
-         <img  src="./images/HeroImage@2x.png" alt="Hero Image">
-      </div>
-     
       </section>
-      <section>
 
-      </section>
-      <section>
+      <!-- ================= 2. FEATURES ================= -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title center">Everything you need to measure,<br />model, and act on sustainability</h2>
 
-      </section>
-      <section>
+          <div class="features">
+            <!-- TODO: replace with exported image (blurred sky + plant) -->
+            <div class="img img-sky features-img">
+              <div class="metric-card">
+                <div class="metric-top">
+                  <span class="mono">Energy consumption</span>
+                  <svg class="sparkle" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1v22M1 12h22M4.2 4.2l15.6 15.6M19.8 4.2 4.2 19.8" /></svg>
+                </div>
+                <div class="metric-bottom">
+                  <p class="metric-number">583.7 <span class="mono unit">MWh</span></p>
+                  <span class="mono change">↓12.4%</span>
+                </div>
+              </div>
+            </div>
 
+            <div class="features-list">
+              <ul>
+                <li>
+                  <div>
+                    <h3>Track</h3>
+                    <p class="serif">Emissions, energy, and waste across your value chain</p>
+                  </div>
+                  <span class="mono num">01</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Model</h3>
+                    <p class="serif">Forecast performance and goal alignment</p>
+                  </div>
+                  <span class="mono num">02</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Report</h3>
+                    <p class="serif">Generate ESG disclosures, automate frameworks</p>
+                  </div>
+                  <span class="mono num">03</span>
+                </li>
+                <li>
+                  <div>
+                    <h3>Act</h3>
+                    <p class="serif">Surface insights and operational next steps</p>
+                  </div>
+                  <span class="mono num">04</span>
+                </li>
+              </ul>
+              <a href="./product.html" class="btn">+ Explore features</a>
+            </div>
+          </div>
+        </div>
       </section>
-      <section>
 
-      </section>
-      <section>
+      <!-- ================= 3. BUILT FOR CLARITY ================= -->
+      <!-- TODO: background is a beige fabric texture in the design -->
+      <section class="clarity">
+        <div class="container">
+          <h2 class="split-heading clarity-title center">
+            <span class="serif">Built for clarity</span>
+            <span>Designed for action</span>
+          </h2>
 
+          <div class="cards">
+            <article class="card">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path d="M12 2v10h10" /></svg>
+              <h3>Clarity drives action</h3>
+              <p class="serif">We believe better decisions start with better data—measured, visible, and trusted.</p>
+            </article>
+            <article class="card">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /><ellipse cx="12" cy="12" rx="4.5" ry="10" /><path d="M2 12h20" /></svg>
+              <h3>Sustainability is a systems problem</h3>
+              <p class="serif">We build tools that help teams connect the dots between operations, impact, and accountability.</p>
+            </article>
+            <article class="card">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path d="M8.5 15.5l7-7M9.5 8.5h6v6" /></svg>
+              <h3>Progress over perfection</h3>
+              <p class="serif">We support real-world momentum—helping organizations move from ambition to measurable change.</p>
+            </article>
+          </div>
+        </div>
       </section>
-      <section>
 
+      <!-- ================= 4. CASE STUDY ================= -->
+      <section class="section">
+        <div class="container-narrow">
+          <div class="case-study">
+            <!-- TODO: replace with exported image (blue duotone team photo) -->
+            <div class="img img-blue case-img"></div>
+            <div class="case-text">
+              <h3>Why Acme Inc chose Aetherfield</h3>
+              <p class="serif">With fragmented data and growing reporting pressure, Acme turned to Aetherfield to streamline their ESG workflows. The result? Faster decisions, fewer spreadsheets, and 34% more coverage.</p>
+              <a href="#" class="btn">+ Read case study</a>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <!-- ================= 5. FROM THE JOURNAL ================= -->
+      <section class="section journal-section">
+        <div class="container-narrow journal">
+          <!-- Blue diamond "Aetherfield Journal" badge -->
+          <svg class="journal-badge" viewBox="0 0 200 120" role="img" aria-label="Aetherfield Journal">
+            <path d="M100 6 194 60 100 114 6 60Z" />
+            <path d="M100 13 182 60 100 107 18 60Z" />
+            <text x="100" y="56" text-anchor="middle">Aetherfield</text>
+            <text x="100" y="76" text-anchor="middle">Journal</text>
+          </svg>
+
+          <div class="journal-content">
+            <h2 class="section-title">From the journal</h2>
+
+            <a href="./journal.html" class="article">
+              <div class="img img-sky thumb"></div>
+              <div>
+                <h3>How to Build a Climate-Ready Data Stack</h3>
+                <p class="mono meta">Strategy · 4 min</p>
+              </div>
+            </a>
+            <a href="./journal.html" class="article">
+              <div class="img img-moss thumb"></div>
+              <div>
+                <h3>Sustainability Isn’t a Side Project: Making Impact Operational</h3>
+                <p class="mono meta">Strategy · 5 min</p>
+              </div>
+            </a>
+            <a href="./journal.html" class="article">
+              <div class="img img-sunset thumb"></div>
+              <div>
+                <h3>Inside the Aetherfield Model: How We Turn Data Into Action</h3>
+                <p class="mono meta">Product · 6 min</p>
+              </div>
+            </a>
+
+            <div class="center">
+              <a href="./journal.html" class="btn">+ View all articles</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 6. TESTIMONIAL ================= -->
+      <section class="section">
+        <div class="container testimonial">
+          <!-- TODO: replace with exported cut-out portrait (blue duotone, white outline) -->
+          <div class="img img-blue portrait"></div>
+          <blockquote>
+            <span class="quote-mark">“</span>
+            <p class="quote">We finally moved past spreadsheets and guesswork. Now we have real data to guide real decisions.</p>
+            <p class="quote-name">Elliot Williams</p>
+            <p class="serif quote-role">Head of Sustainability, Flux Materials</p>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- ================= 7. CTA ================= -->
+      <section class="cta">
+        <div class="container center">
+          <h2 class="cta-title">Ready to operationalize your sustainability goals?</h2>
+          <a href="./getstarted.html" class="btn">+ Request a demo</a>
+        </div>
+      </section>
+
     </main>
-    <footer>
-      <nav>
-         <ul>
-        <li>Product</li>
-        <li>Journal</li>
-        <li>About</li>
-        <li>Careers</li>
-        <li>Get Started</li>
-    </ul>
-      </nav>
-     
-    <div>&copy; 2026. All rights reserved.</div>
+
+    <!-- ================= FOOTER ================= -->
+    <!-- TODO: background is a yellow grass texture in the design -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <nav>
+            <ul>
+              <li><a href="./product.html">Product</a></li>
+              <li><a href="./journal.html">Journal</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./careers.html">Careers</a></li>
+              <li><a href="./getstarted.html">Get started</a></li>
+            </ul>
+          </nav>
+          <div>&copy; 2026 · All rights reserved</div>
+        </div>
+        <p class="wordmark" aria-hidden="true">Aetherfield</p>
+      </div>
     </footer>
+
   </body>
 </html>
